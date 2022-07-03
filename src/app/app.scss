@@ -1,0 +1,63 @@
+@import "../shared/styles/index";
+
+#root {
+  background-image: url("../shared/assets/images/background-main.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 0;
+  left: 0;
+  top: 0;
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Display';
+  src: url('../shared/assets/fonts/Plus Jakarta Display/PlusJakartaDisplay-Light.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Display';
+  src: url('../shared/assets/fonts/Plus Jakarta Display/PlusJakartaDisplay-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Display';
+  src: url('../shared/assets/fonts/Plus Jakarta Display/PlusJakartaDisplay-Bold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clash Display Variable';
+  src: url('../shared/assets/fonts/Clash Display Variable/Variable/ClashDisplay-Variable.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roobert-Regular';
+  src: url('../shared/assets/fonts/Roobert-Regular.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Trap';
+  src: url('../shared/assets/fonts/Trap_Font_Family_(Fontmirror)/Trap-SemiBold 600.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+.fp-section:first-child {
+  background-image: unset;
+}
+
+.fp-section:last-child {
+  background-image: url("../pages/roadmap/assets/images/rm-background.png");
+}

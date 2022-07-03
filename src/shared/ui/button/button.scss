@@ -1,0 +1,48 @@
+@import "animate.css";
+
+.animate__delay-05s {
+  --animate-delay: 0.5s;
+}
+
+.button {
+  $text-color: #141415;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: unset;
+  padding: 1rem;
+  background-size: 75% 100%;
+  background-repeat: no-repeat;
+  background-position: center 2px;
+  background-color: #0000;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+
+  svg {
+    padding-left: 0.5rem;
+    width: 20px;
+  }
+
+  &_light {
+    padding: 2rem 3rem;
+    background-image: url("./assets/images/background-light.svg");
+    color: $text-color;
+  }
+
+  &_dark {
+    padding: 2rem 3rem;
+    background-image: url("./assets/images/background-dark.svg");
+    color: #ffffff;
+  }
+
+  &__wrapper {
+    background-image: url("./assets/images/wrapper.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

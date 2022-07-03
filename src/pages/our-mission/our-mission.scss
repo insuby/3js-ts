@@ -1,0 +1,82 @@
+.our-mission {
+  height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1.5rem;
+
+  &__card {
+    height: 354px;
+    width: 354px;
+    padding: 2.5rem;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    &:first-child {
+      background: url("./assets/images/frame-1.svg");
+    }
+
+    &:nth-child(2) {
+      background: url("./assets/images/frame-2.svg");
+    }
+
+    &:last-child {
+      background: url("./assets/images/frame-3.svg");
+    }
+
+    h3 {
+      font-family: 'Clash Display Variable';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 140.5%;
+
+      /* or 31px */
+      text-align: center;
+      text-transform: capitalize;
+    }
+
+    p {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 121.12%;
+      /* or 17px */
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  &__icon {
+    $size: 314px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    position: absolute;
+    height: $size;
+    width: $size;
+    top: -40%;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    &_1 {
+      background-image: url("./assets/images/icon-1.png");
+    }
+
+    &_2 {
+      background-image: url("./assets/images/icon-2.png");
+    }
+
+    &_3 {
+      background-image: url("./assets/images/icon-3.png");
+    }
+  }
+
+}

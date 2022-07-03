@@ -1,0 +1,25 @@
+.card {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  color: #ffffff;
+  row-gap: 1rem;
+
+  p {
+    text-align: center;
+    font-family: "Plus Jakarta Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 121.12%;
+    /* or 19px */
+    letter-spacing: 0.03em;
+    color: #e7e7e785;
+  }
+}

@@ -1,0 +1,41 @@
+@import "normalize";
+@import "helpers";
+@import "mixins";
+
+html,
+body,
+canvas {
+  width: 100%;
+  height: 100%;
+  background-color: #0000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer,
+main,
+aside,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  user-select: none;
+}

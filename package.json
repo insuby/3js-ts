@@ -1,0 +1,86 @@
+{
+  "name": "3js-ts",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": "v16.15.1"
+  },
+  "scripts": {
+    "start": "webpack server --config webpack/dev.js",
+    "build": "webpack --config webpack/prod.js",
+    "build:analyze": "webpack --config webpack/prod.js --env ANALYZE",
+    "preinstall": "npm-force-resolutions",
+    "prepare": "husky install",
+    "lint": "eslint src --fix",
+    "audit:prod": "npm audit --production"
+  },
+  "dependencies": {
+    "@fullpage/react-fullpage": "0.1.26",
+    "@react-three/drei": "9.14.3",
+    "@react-three/fiber": "8.0.27",
+    "animate.css": "4.1.1",
+    "lerp": "1.0.3",
+    "react": "18.2.0",
+    "react-animated-number": "0.4.4",
+    "react-animated-text": "0.1.4",
+    "react-async-image": "3.0.0",
+    "react-dom": "18.2.0",
+    "react-slick": "0.29.0",
+    "slick-carousel": "1.8.1",
+    "three": "0.127.0",
+    "threejs-meshline": "2.0.12"
+  },
+  "devDependencies": {
+    "@pmmmwh/react-refresh-webpack-plugin": "0.5.7",
+    "@trivago/prettier-plugin-sort-imports": "3.2.0",
+    "@types/gl": "4.1.0",
+    "@types/node": "18.0.0",
+    "@types/react": "18.0.14",
+    "@types/react-dom": "18.0.5",
+    "@types/three": "0.141.0",
+    "@typescript-eslint/parser": "5.30.0",
+    "circular-dependency-plugin": "5.2.2",
+    "copy-webpack-plugin": "11.0.0",
+    "css-loader": "6.7.1",
+    "file-loader": "6.2.0",
+    "fork-ts-checker-notifier-webpack-plugin": "6.0.0",
+    "fork-ts-checker-webpack-plugin": "7.2.11",
+    "html-webpack-plugin": "5.5.0",
+    "husky": "8.0.1",
+    "lint-staged": "13.0.3",
+    "node-sass": "7.0.1",
+    "npm-force-resolutions": "0.0.10",
+    "postcss": "8.4.14",
+    "postcss-loader": "7.0.0",
+    "postcss-preset-env": "7.7.2",
+    "prettier": "2.7.1",
+    "react-docgen-typescript-loader": "3.7.2",
+    "react-refresh": "0.14.0",
+    "react-refresh-typescript": "2.0.5",
+    "resolve-url-loader": "5.0.0",
+    "sass": "1.53.0",
+    "sass-loader": "13.0.2",
+    "style-loader": "3.3.1",
+    "terser-webpack-plugin": "5.3.3",
+    "ts-loader": "9.3.1",
+    "tsconfig-paths-webpack-plugin": "3.5.2",
+    "typescript": "4.7.4",
+    "webpack": "5.73.0",
+    "webpack-bundle-analyzer": "4.5.0",
+    "webpack-cli": "4.10.0",
+    "webpack-dev-server": "4.9.3",
+    "webpack-merge": "5.8.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

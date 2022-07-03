@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "lib": ["DOM", "ES7", "ES2017", "ES2018", "ES2019"],
+    "outDir": "./dist",
+    "jsx": "react-jsx",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "importHelpers": true,
+    "noUnusedLocals": true,
+    "experimentalDecorators": false,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"]
+    },
+    "typeRoots": [
+      "src/shared/**/*.d.ts",
+      "types/index.d.ts",
+      "node_modules/@types"
+    ]
+  },
+  "include": ["src", "types/index.d.ts", "./node_modules/@types"],
+  "exclude": ["**/*.js", "node_modules", ".webpack_cache"]
+}

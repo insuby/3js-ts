@@ -1,0 +1,24 @@
+
+.fp-arrow.fp-prev {
+  left: 12.667%;
+  border: none;
+  width: 41px;
+  height: 193px;
+  background: url('arrow-prev.svg') no-repeat;
+  cursor: pointer;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+
+.fp-arrow.fp-next {
+  bottom: 0;
+  margin: auto;
+  top: 0;
+  right: 12.667%;
+  border: none;
+  width: 41px;
+  height: 193px;
+  background: url('arrow-next.svg') no-repeat;
+  cursor: pointer;
+}

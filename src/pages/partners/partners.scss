@@ -1,0 +1,11 @@
+.partners {
+  &__grid {
+    background-image: url("./assets/images/background.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.3rem;
+  }
+}

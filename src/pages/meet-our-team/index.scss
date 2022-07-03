@@ -1,0 +1,203 @@
+//$team:
+
+.team {
+  height: 512px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2rem;
+
+  .teammate {
+    $height: 441px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    position: relative;
+    width: 188px;
+
+    &_crypto-executives {
+      background-image: url("./assets/images/crypto-executives.png");
+    }
+    &_irani {
+      background-image: url("./assets/images/irani.png");
+    }
+    &_janice {
+      background-image: url("./assets/images/janice.png");
+    }
+    &_joseph {
+      background-image: url("./assets/images/joseph.png");
+    }
+    &_kay {
+      background-image: url("./assets/images/kay.png");
+    }
+    &_leon {
+      background-image: url("./assets/images/leon.png");
+    }
+    &_thomas {
+      background-image: url("./assets/images/thomas.png");
+    }
+    &_thomas {
+      background-image: url("./assets/images/nijssen.png");
+    }
+
+    &:not(:last-child) {
+      &:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        right: -1rem;
+        background-image: url("./assets/images/divider.svg");
+        background-repeat: no-repeat;
+        background-position-x: right;
+        width: 10px;
+      }
+    }
+
+    &:hover {
+      .teammate__desc {
+        transform: translateY($height/2);
+      }
+
+      .teammate__social {
+        transform: translateX(0);
+      }
+
+      .teammate__block {
+          -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+          filter: grayscale(0%);
+      }
+    }
+
+    &__block {
+      height: $height;
+      border: 2px solid #3E3E3E;
+      overflow: hidden;
+      position: relative;
+      transition: .3s ease-in-out;
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+
+      span:last-child {
+        font-family: 'Trap';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 121.12%;
+        /* or 12px */
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+      }
+    }
+
+    &__desc {
+      transform: translateY($height*1.5);
+      transition: .5s ease-in-out;
+
+      span {
+        &:first-child {
+          height: 15px;
+          position: absolute;
+          right: 0;
+          left: 0;
+          top: -7.5px;
+          background-image: url("./assets/images/rect-up.svg");
+          background-repeat: no-repeat;
+          display: block;
+        }
+
+        &:not(:first-child) {
+          padding: 0 .5rem;
+          display: block;
+          height: 100%;
+          background: rgba(62, 62, 62, 0.38);
+          backdrop-filter: blur(39px);
+        }
+      }
+    }
+
+    &__social {
+      transform: translateX(100%);
+      transition: .3s ease-in-out;
+      width: 35px;
+      height: 35px;
+      position: absolute;
+      right: 0;
+      cursor: pointer;
+    }
+
+    &__short {
+      height: 54px;
+      display: flex;
+
+      .rect {
+        position: absolute;
+        left: .5rem;
+        top: 1px;
+        bottom: 1px;
+        display: block;
+        width: 10px;
+
+        &_blue {
+          background: #6174FF;
+        }
+
+        &_pink {
+          background: #FF1FA2;
+        }
+      }
+
+      div {
+        background: #151515;
+        border: 2px solid #313131;
+        height: 100%;
+        position: relative;
+
+        &:first-child {
+          width: 6px;
+        }
+
+        &:last-child {
+          margin-left: .5rem;
+          width: 100%;
+          position: relative;
+
+          p {
+
+            position: absolute;
+            z-index: 2;
+            left: .75rem;
+            font-family: 'Clash Display Variable';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 110.12%;
+            top: 10%;
+            /* or 15px */
+            letter-spacing: 0.03em;
+            text-transform: capitalize;
+            /* 1 */
+            background: linear-gradient(270.07deg, #F8FDFC 6.06%, #BAC1FF 46.91%, #FFFFFF 96.31%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-fill-color: transparent;
+            transform: matrix(1, 0, 0, 1, 0, 0);
+
+            &:last-child {
+              top: 50%;
+              left: 1.25rem;
+              font-family: 'Trap';
+              font-style: normal;
+              font-weight: 600;
+              font-size: 10px;
+              line-height: 121.12%;
+              /* or 12px */
+              letter-spacing: 0.03em;
+              color: #D1D1D1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
