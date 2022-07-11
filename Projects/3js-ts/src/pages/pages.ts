@@ -1,8 +1,8 @@
-export { MainPage } from "./main";
-export { PartnersPage } from "./partners";
-export { AboutPage } from "./about";
-export { GspTokenPage } from "./gsp-token";
-export { HowItWorksPage } from "./how-it-works";
-export { MeetOurTeamPage } from "./meet-our-team";
-export { RoadmapPage } from "./roadmap";
-export { OurMissionPage } from "./our-mission";
+export * from "./main";
+export * from "./partners";
+export * from "./about";
+export * from "./gsp-token";
+export * from "./how-it-works";
+export * from "./meet-our-team";
+export * from "./roadmap";
+export * from "./our-mission";

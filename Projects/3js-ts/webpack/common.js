@@ -11,7 +11,7 @@ module.exports = {
     path: distPath,
     filename: "[name][size].bundle.js",
     publicPath: "/",
-    assetModuleFilename: 'static/images/[name][ext]',
+    assetModuleFilename: "static/images/[name][ext]",
   },
   resolve: {
     alias: {

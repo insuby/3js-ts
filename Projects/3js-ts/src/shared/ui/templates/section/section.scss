@@ -2,21 +2,19 @@
   height: 99% !important;
 
   &.active {
-   //section svg
+    //section svg
     & .frame-wrapper {
       display: none;
     }
   }
 
   &.active {
-
     .section__content-wrapper {
       display: flex;
     }
   }
 
   &__title {
-    padding-bottom: 5rem;
     text-transform: uppercase;
     font-family: "Clash Display Variable";
     font-size: 45px;
@@ -24,10 +22,10 @@
     text-align: center;
     letter-spacing: 0.47em;
     background: linear-gradient(
-                    270.07deg,
-                    #f8fdfc 6.06%,
-                    #bac1ff 46.91%,
-                    #ffffff 96.31%
+      270.07deg,
+      #f8fdfc 6.06%,
+      #bac1ff 46.91%,
+      #ffffff 96.31%
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

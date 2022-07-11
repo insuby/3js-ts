@@ -23,13 +23,23 @@
   ],
   "overrides": [
     {
+      "extends": [
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "prettier/@typescript-eslint"
+      ],
+      "parser": "@typescript-eslint/parser",
+      "plugins": [
+        "@typescript-eslint"
+      ],
       "files": [
-        "**/*.stories.tsx",
         "./webpack/**",
-        "**/storybook/**/*.tsx"
+        "*.ts",
+        "*.tsx"
       ],
       "rules": {
-        "import/no-extraneous-dependencies": "off"
+        "import/no-extraneous-dependencies": "off",
+        "parser": "@typescript-eslint/parser"
       }
     }
   ],
@@ -85,7 +95,12 @@
       }
     ],
     "arrow-body-style": "off",
-    "prefer-arrow-callback": "off",
+    "prefer-arrow-callback": [
+      "error",
+      {
+        "allowNamedFunctions": true
+      }
+    ],
     "prefer-destructuring": "warn",
     "camelcase": "error",
     "brace-style": "error",
@@ -101,9 +116,6 @@
       }
     ],
     "import/no-unresolved": "error",
-    "import/parsers": {
-      "@typescript-eslint/parser": [".ts", ".tsx"]
-    },
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -113,34 +125,11 @@
         "ts": "never",
         "tsx": "never"
       }
-   ],
+    ],
     "import/resolver": {
-//      "typescript": {
-//        "alwaysTryTypes": true
-        // always try to resolve types under `<root>@types` directory even it doesn't contain any source code, like `@types/unist`
-
-        // Choose from one of the "project" configs below or omit to use <root>/tsconfig.json by default
-
-        // use <root>/path/to/folder/tsconfig.json
-//        "project": "/",
-
-        // Multiple tsconfigs (Useful for monorepos)
-
-//         use a glob pattern
-//        "project": "/tsconfig.json"
-
-//        // use an array
-//        "project": [
-//          "packages/module-a/tsconfig.json",
-//          "packages/module-b/tsconfig.json"
-//        ],
-//
-//        // use an array of glob patterns
-//        "project": [
-//          "packages/*/tsconfig.json",
-//          "other-packages/*/tsconfig.json"
-//        ]
-//      }
+      "typescript": {
+        "alwaysTryTypes": true
+      }
     }
   }
 }

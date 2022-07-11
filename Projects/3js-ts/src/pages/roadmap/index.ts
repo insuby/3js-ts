@@ -1,1 +1,1 @@
-export { Roadmap as RoadmapPage } from "./roadmap";
+export { Roadmap } from "./roadmap";

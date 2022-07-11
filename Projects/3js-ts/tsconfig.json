@@ -3,6 +3,13 @@
     "module": "esnext",
     "target": "es5",
     "strict": true,
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ES2017",
+      "ES2018",
+      "ES2019",
+    ],
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
@@ -24,6 +31,14 @@
       "shared/**/*.ts"
     ]
   },
-  "include": ["src", "types/index.d.ts", "./node_modules/@types"],
-  "exclude": ["node_modules", ".webpack_cache", ".husky"]
+  "include": [
+    "src",
+    "types/index.d.ts",
+    "./node_modules/@types"
+  ],
+  "exclude": [
+    "node_modules",
+    ".webpack_cache",
+    ".husky"
+  ]
 }

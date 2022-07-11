@@ -1,1 +1,1 @@
-export { GspToken as GspTokenPage } from "./gsp-token";
+export { GspToken } from "./gsp-token";

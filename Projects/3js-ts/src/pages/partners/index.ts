@@ -1,1 +1,1 @@
-export { Partners as PartnersPage } from "./partner";
+export { Partners } from "./partner";

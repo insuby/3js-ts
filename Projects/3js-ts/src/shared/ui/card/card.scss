@@ -1,6 +1,8 @@
 @import "src/shared/styles/mixins";
+
 .card {
   @include bg-center-cover();
+  background-size: contain;
   overflow: hidden;
   display: flex;
   align-items: center;

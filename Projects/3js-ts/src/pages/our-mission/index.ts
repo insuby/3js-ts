@@ -1,1 +1,1 @@
-export { OurMission as OurMissionPage } from "./our-mission";
+export { OurMission } from "./our-mission";
