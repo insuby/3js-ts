@@ -1,0 +1,43 @@
+.arrow-stroke {
+  visibility: hidden;
+}
+
+.fp-arrow.fp-prev {
+  left: 20px;
+  border: none;
+  width: 41px;
+  height: 193px;
+  background: url("arrow-prev.svg") no-repeat;
+  cursor: pointer;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+
+  &:hover {
+    .arrow-stroke {
+      visibility: visible;
+    }
+  }
+}
+
+.fp-arrow.fp-next {
+  bottom: 0;
+  margin: auto;
+  top: 0;
+  right: 20px;
+  border: none;
+  width: 41px;
+  height: 193px;
+  background: url("arrow-next.svg") no-repeat;
+  cursor: pointer;
+
+  &:hover {
+    .arrow-stroke {
+      visibility: visible;
+    }
+  }
+}
+
+.fp-prev:first-child {
+  display: none;
+}

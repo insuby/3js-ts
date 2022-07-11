@@ -1,0 +1,88 @@
+@import "src/shared/styles/index";
+@import "src/shared/styles/mixins";
+
+#root {
+  //@include bg-center-cover();
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  background: url("./assets/images/background.png");
+  position: fixed;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+
+  //& section.active {
+  //  &:first-child {
+  //
+  //  }
+  //}
+}
+
+
+@font-face {
+  font-family: "Plus Jakarta Display";
+  src: url("../shared/assets/fonts/Plus Jakarta Display/PlusJakartaDisplay-Light.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Display";
+  src: url("../shared/assets/fonts/Plus Jakarta Display/PlusJakartaDisplay-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Display";
+  src: url("../shared/assets/fonts/Plus Jakarta Display/PlusJakartaDisplay-Bold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Clash Display Variable";
+  src: url("../shared/assets/fonts/Clash Display Variable/Variable/ClashDisplay-Variable.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roobert-Regular";
+  src: url("../shared/assets/fonts/Roobert-Regular.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Trap";
+  src: url("../shared/assets/fonts/Trap_Font_Family_(Fontmirror)/Trap-SemiBold 600.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Machina";
+  src: url("../shared/assets/fonts/Neue Machina - Free for Personal Use/NeueMachina-Regular.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+.fp-section:last-child {
+  background-image: url("../pages/roadmap/assets/images/rm-background.png");
+  @include bg-center-cover();
+}
+
+.animate__animated {
+  --animate-duration: 2s;
+}
+
+//$delays: 5, 5, 1, 1.25, 1.5, 1.75, 2;
+//
+//@each $delay in $delays {
+//  .animate-delay-#{$delay}ss {
+//    animation-delay: #{$delay}s;
+//  }
+//}

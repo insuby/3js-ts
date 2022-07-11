@@ -1,0 +1,59 @@
+.section {
+  height: 99% !important;
+
+  &.active {
+   //section svg
+    & .frame-wrapper {
+      display: none;
+    }
+  }
+
+  &.active {
+
+    .section__content-wrapper {
+      display: flex;
+    }
+  }
+
+  &__title {
+    padding-bottom: 5rem;
+    text-transform: uppercase;
+    font-family: "Clash Display Variable";
+    font-size: 45px;
+    line-height: 110.12%;
+    text-align: center;
+    letter-spacing: 0.47em;
+    background: linear-gradient(
+                    270.07deg,
+                    #f8fdfc 6.06%,
+                    #bac1ff 46.91%,
+                    #ffffff 96.31%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    transform: rotate(0.21deg);
+  }
+
+  &__content-wrapper {
+    height: 100%;
+    width: 100%;
+    max-width: 1374px;
+    position: relative;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    padding: 2rem;
+  }
+
+  &__video-wrapper {
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+  }
+}

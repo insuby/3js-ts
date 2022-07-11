@@ -1,0 +1,126 @@
+//section:first-child {
+//  .frame-wrapper {
+//    display: none;
+//  }
+//}
+
+.getsetplay {
+  font-family: "Clash Display Variable";
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 260px;
+  line-height: 110.12%;
+  /* or 286px */
+
+  letter-spacing: 0.03em;
+
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  text-fill-color: white;
+
+  opacity: 0.6;
+  transform: rotate(0.21deg);
+
+  &:nth-child(1) {
+    background-image: linear-gradient(
+      180deg,
+      #ffffff 33.9%,
+      rgba(255, 255, 255, 0) 58.64%
+    );
+  }
+
+  &:nth-child(2) {
+    background-image: linear-gradient(
+      107.9deg,
+      #ffffff 9.22%,
+      rgba(255, 255, 255, 0) 29.05%
+    );
+  }
+
+  &:last-child {
+    background-image: linear-gradient(
+      180deg,
+      #ffffff 33.9%,
+      rgba(255, 255, 255, 0) 58.64%
+    );
+  }
+}
+
+.main-page-grid {
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  transform: rotate(0.21deg);
+  row-gap: 2rem;
+  position: absolute;
+
+  &_left {
+    align-items: self-start;
+    justify-content: flex-start;
+    padding-top: 20%;
+    left: 0;
+    top: 0;
+
+    span {
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+
+      &:first-child {
+        font-family: "Roobert-Regular", serif;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.5);
+        white-space: nowrap;
+      }
+
+      &:last-child {
+        padding-top: 1rem;
+        font-family: "Clash Display Variable", serif;
+        font-size: 45px;
+        letter-spacing: 0.225em;
+        background: linear-gradient(
+          270.07deg,
+          #f8fdfc 6.06%,
+          #bac1ff 46.91%,
+          #ffffff 96.31%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+      }
+    }
+  }
+
+  &_center {
+    height: 100%;
+    inset: 0;
+  }
+
+  &_right {
+    align-items: self-start;
+    justify-content: flex-end;
+    right: 0;
+    bottom: 20%;
+    height: 100%;
+
+    span {
+      &:first-child {
+        font-family: "Plus Jakarta Display", serif;
+        font-size: 14px;
+        line-height: 121.12%;
+        /* or 17px */
+        letter-spacing: 0.03em;
+        color: rgba(209, 209, 209, 0.76);
+      }
+    }
+  }
+}

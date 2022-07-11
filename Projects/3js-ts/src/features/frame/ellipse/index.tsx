@@ -1,0 +1,160 @@
+import { FunctionComponent } from "react";
+
+export const Ellipse: FunctionComponent<Partial<{ x: number; y: number }>> = ({
+  x,
+  y,
+}) => {
+  return (
+    <svg
+      x={x}
+      y={y}
+      width="94"
+      height="94"
+      viewBox="0 0 94 94"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g filter="url(#filter0_b_1_4055)">
+        <circle
+          r="47"
+          transform="matrix(1 0 0 -1 47 47)"
+          fill="#EFDEFF"
+          fillOpacity="0.09"
+        />
+        <circle
+          r="46.3472"
+          transform="matrix(1 0 0 -1 47 47)"
+          stroke="white"
+          strokeOpacity="0.16"
+          strokeWidth="1.30556"
+        />
+      </g>
+      <g filter="url(#filter1_b_1_4055)">
+        <path
+          d="M36.6225 25.7075C36.06 22.6029 38.4454 19.7465 41.6005 19.7465H51.8657C55.138 19.7465 57.5494 22.8063 56.7845 25.988L54.9511 33.6147C54.7026 34.6483 54.1349 35.5773 53.3285 36.2699L47.364 41.3929C46.9432 41.7543 46.3236 41.7612 45.8949 41.4093L39.7811 36.3906C38.8536 35.6292 38.227 34.563 38.013 33.3822L36.6225 25.7075Z"
+          stroke="white"
+          strokeOpacity="0.9"
+          strokeWidth="1.63194"
+        />
+      </g>
+      <path
+        d="M35.8196 66.1887C35.1664 69.794 37.9365 73.1111 41.6005 73.1111H51.8657C55.6658 73.1111 58.4662 69.5578 57.5779 65.8629L55.7445 58.2362C55.4559 57.0359 54.7966 55.957 53.8601 55.1527L47.8957 50.0298C47.1743 49.4102 46.1121 49.3983 45.3772 50.0017L39.2634 55.0203C38.1863 55.9045 37.4586 57.1427 37.2101 58.5139L35.8196 66.1887Z"
+        fill="white"
+      />
+      <path
+        d="M36.6225 66.3342C36.06 69.4387 38.4454 72.2951 41.6005 72.2951H51.8657C55.138 72.2951 57.5494 69.2353 56.7845 66.0536L54.9511 58.4269C54.7026 57.3934 54.1349 56.4643 53.3285 55.7717L47.364 50.6488C46.9432 50.2873 46.3236 50.2804 45.8949 50.6324L39.7811 55.651C38.8536 56.4124 38.227 57.4787 38.013 58.6594L36.6225 66.3342Z"
+        stroke="white"
+        strokeOpacity="0.9"
+        strokeWidth="1.63194"
+      />
+      <g filter="url(#filter2_b_1_4055)">
+        <path
+          d="M25.8565 35.2035C22.2502 34.5479 18.9307 37.3184 18.9307 40.9838V51.9421C18.9307 55.7442 22.4873 58.5449 26.1833 57.6534L34.2199 55.7148C35.4217 55.4249 36.5015 54.7633 37.3054 53.8241L42.6199 47.6156C43.2366 46.8951 43.2484 45.8362 42.6479 45.1021L37.4378 38.7335C36.554 37.6533 35.3146 36.923 33.9414 36.6733L25.8565 35.2035Z"
+          fill="white"
+          fillOpacity="0.21"
+        />
+      </g>
+      <g filter="url(#filter3_b_1_4055)">
+        <path
+          d="M67.3774 35.2035C70.9837 34.5479 74.3032 37.3184 74.3032 40.9838V51.9421C74.3032 55.7442 70.7466 58.5449 67.0506 57.6534L59.014 55.7148C57.8122 55.4249 56.7324 54.7633 55.9285 53.8241L50.614 47.6156C49.9973 46.8951 49.9855 45.8362 50.586 45.1021L55.7961 38.7335C56.6799 37.6533 57.9193 36.923 59.2925 36.6733L67.3774 35.2035Z"
+          fill="white"
+          fillOpacity="0.21"
+        />
+      </g>
+      <defs>
+        <filter
+          id="filter0_b_1_4055"
+          x="-123.095"
+          y="-123.095"
+          width="340.19"
+          height="340.19"
+          filterUnits="userSpaceOnUse"
+          colorInterpolationFilters="sRGB"
+        >
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
+          <feGaussianBlur in="BackgroundImage" stdDeviation="61.5476" />
+          <feComposite
+            in2="SourceAlpha"
+            operator="in"
+            result="effect1_backgroundBlur_1_4055"
+          />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="effect1_backgroundBlur_1_4055"
+            result="shape"
+          />
+        </filter>
+        <filter
+          id="filter1_b_1_4055"
+          x="16.1403"
+          y="-0.652792"
+          width="61.1862"
+          height="62.7207"
+          filterUnits="userSpaceOnUse"
+          colorInterpolationFilters="sRGB"
+        >
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
+          <feGaussianBlur in="BackgroundImage" stdDeviation="9.79167" />
+          <feComposite
+            in2="SourceAlpha"
+            operator="in"
+            result="effect1_backgroundBlur_1_4055"
+          />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="effect1_backgroundBlur_1_4055"
+            result="shape"
+          />
+        </filter>
+        <filter
+          id="filter2_b_1_4055"
+          x="-7.06934"
+          y="9.10712"
+          width="76.1597"
+          height="74.7128"
+          filterUnits="userSpaceOnUse"
+          colorInterpolationFilters="sRGB"
+        >
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
+          <feGaussianBlur in="BackgroundImage" stdDeviation="13" />
+          <feComposite
+            in2="SourceAlpha"
+            operator="in"
+            result="effect1_backgroundBlur_1_4055"
+          />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="effect1_backgroundBlur_1_4055"
+            result="shape"
+          />
+        </filter>
+        <filter
+          id="filter3_b_1_4055"
+          x="24.1436"
+          y="9.10712"
+          width="76.1597"
+          height="74.7128"
+          filterUnits="userSpaceOnUse"
+          colorInterpolationFilters="sRGB"
+        >
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
+          <feGaussianBlur in="BackgroundImage" stdDeviation="13" />
+          <feComposite
+            in2="SourceAlpha"
+            operator="in"
+            result="effect1_backgroundBlur_1_4055"
+          />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="effect1_backgroundBlur_1_4055"
+            result="shape"
+          />
+        </filter>
+      </defs>
+    </svg>
+  );
+};

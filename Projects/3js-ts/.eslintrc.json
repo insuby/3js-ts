@@ -1,0 +1,146 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:react/recommended",
+    "plugin:import/warnings",
+    "plugin:import/errors",
+    "plugin:import/typescript",
+    "airbnb",
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "airbnb-typescript-prettier",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "**/*.stories.tsx",
+        "./webpack/**",
+        "**/storybook/**/*.tsx"
+      ],
+      "rules": {
+        "import/no-extraneous-dependencies": "off"
+      }
+    }
+  ],
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "import",
+    "prettier"
+  ],
+  "rules": {
+    "@typescript-eslint/ban-types": "off",
+    "@typescript-eslint/ban-ts-commend": "off",
+    "@typescript-eslint/lines-between-class-members": [
+      "error",
+      "always",
+      {
+        "exceptAfterSingleLine": true
+      }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "printWidth": 100,
+        "tabWidth": 2,
+        "quoteProps": "as-needed",
+        "useTabs": false,
+        "singleQuote": true,
+        "bracketSpacing": true,
+        "semi": true,
+        "trailingComma": "all",
+        "arrowParens": "always",
+        "plugins": [
+          "@trivago/prettier-plugin-sort-imports"
+        ],
+        "importOrder": [
+          "\\w+.s*css$",
+          "\\.(png|jpe?g|gif|svg)$/i",
+          "<THIRD_PARTY_MODULES>",
+          "(^react/(.*)$|react)",
+          "(^redux/(.*)$|redux)",
+          "^app/(.*)$",
+          "^processes/(.*)$",
+          "^pages/(.*)$",
+          "^widgets/(.*)$",
+          "^features/(.*)$",
+          "^entities/(.*)$",
+          "^shared/(.*)$",
+          "^helpers/(.*)$",
+          "^[./]"
+        ],
+        "importOrderSeparation": true,
+        "importOrderSortSpecifiers": true
+      }
+    ],
+    "arrow-body-style": "off",
+    "prefer-arrow-callback": "off",
+    "prefer-destructuring": "warn",
+    "camelcase": "error",
+    "brace-style": "error",
+    "prefer-const": "error",
+    "sort-imports": "off",
+    "no-param-reassign": [
+      "error",
+      {
+        "props": true,
+        "ignorePropertyModificationsForRegex": [
+          "^state"
+        ]
+      }
+    ],
+    "import/no-unresolved": "error",
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+   ],
+    "import/resolver": {
+//      "typescript": {
+//        "alwaysTryTypes": true
+        // always try to resolve types under `<root>@types` directory even it doesn't contain any source code, like `@types/unist`
+
+        // Choose from one of the "project" configs below or omit to use <root>/tsconfig.json by default
+
+        // use <root>/path/to/folder/tsconfig.json
+//        "project": "/",
+
+        // Multiple tsconfigs (Useful for monorepos)
+
+//         use a glob pattern
+//        "project": "/tsconfig.json"
+
+//        // use an array
+//        "project": [
+//          "packages/module-a/tsconfig.json",
+//          "packages/module-b/tsconfig.json"
+//        ],
+//
+//        // use an array of glob patterns
+//        "project": [
+//          "packages/*/tsconfig.json",
+//          "other-packages/*/tsconfig.json"
+//        ]
+//      }
+    }
+  }
+}

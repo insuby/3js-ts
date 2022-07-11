@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "es5",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "removeComments": true,
+    "allowJs": true,
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": true,
+    "outDir": "dist",
+    "jsx": "react-jsx",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "importHelpers": true,
+    "noUnusedLocals": true,
+    "experimentalDecorators": false,
+    "baseUrl": "./src",
+    "typeRoots": [
+      "shared/types/index.d.ts",
+      "shared/**/*.ts"
+    ]
+  },
+  "include": ["src", "types/index.d.ts", "./node_modules/@types"],
+  "exclude": ["node_modules", ".webpack_cache", ".husky"]
+}

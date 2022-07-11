@@ -1,0 +1,49 @@
+$time: 25s;
+
+#logo {
+  will-change: transform;
+  path {
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+}
+
+#bubbles {
+  path {
+    animation-duration: 50s;
+
+    &:nth-child(2) {
+      animation-duration: 20s;
+    }
+  }
+}
+
+#bit-faster {
+  path {
+    animation-duration: 25s;
+  }
+}
+
+.clockwise {
+  animation: clockwise 50s linear infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@keyframes clockwise {
+  50% {
+    transform: rotate(360deg);
+  }
+}
+
+.counter-clockwise {
+  animation: counter-clockwise linear forwards;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@keyframes counter-clockwise {
+  50% {
+    transform: rotate(-360deg);
+  }
+}

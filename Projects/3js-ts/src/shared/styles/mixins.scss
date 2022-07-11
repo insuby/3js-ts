@@ -1,0 +1,48 @@
+// grid
+
+@mixin flex($align: center, $justify: space-between) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin flex-column() {
+  @include flex();
+  flex-direction: column;
+}
+
+@mixin flex-column-evenly() {
+  @include flex-column();
+  justify-content: space-evenly;
+}
+
+// background
+
+@mixin bg-center-cover(
+  $repeat: no-repeat,
+  $position: center center,
+  $size: cover
+) {
+  background-repeat: $repeat;
+  background-position: $position;
+  background-size: $size;
+}
+
+@mixin background-simple-gradient($to, $primary, $secondary) {
+  background: $primary;
+  background: linear-gradient($to, $primary, $secondary);
+}
+
+// text
+@mixin text-gradient($primary, $secondary) {
+  @include background-simple-gradient(to right, $primary, $secondary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin strokes($strokes) {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $strokes;
+  -webkit-box-orient: vertical;
+}
