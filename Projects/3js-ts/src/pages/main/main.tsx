@@ -5,15 +5,17 @@ import { Section } from "shared/ui";
 
 export const Main: FunctionComponent<{ name: string }> = memo(({ name }) => {
   return (
-    <Section name={name}>
-      <ButtonLight
-        text="sign in"
-        style={{
-          position: "absolute",
-          right: "2rem",
-          top: "2rem",
-        }}
-      />
+    <Section name={name} >
+        <div className="entry">
+            <ButtonLight
+                text="sign in"
+                style={{
+                    position: "absolute",
+                    right: "2rem",
+                    top: "2rem",
+                }}
+            />
+        </div>
 
       <div className="main-page-grid">
         <div className="block block_left">

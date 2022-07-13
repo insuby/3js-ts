@@ -27,3 +27,18 @@
     justify-content: center;
   }
 }
+
+@media screen and (max-width: 390px) {
+
+  .card{
+    padding: 40px 20px 20px 20px;
+
+    .about-descr{
+      & br{
+        display: none;
+      }
+    }
+  }
+
+
+}
